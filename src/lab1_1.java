@@ -32,7 +32,6 @@ public class lab1_1 {
         double res3 = (a3/(b3*b3 - 2)) + (b3/(a3*a3 + 2));
         int Res3 = (int) res3;
         System.out.println("Res = " + Res3);
-
         num1_1.close();
         num1_2.close();
         num2_1.close();
