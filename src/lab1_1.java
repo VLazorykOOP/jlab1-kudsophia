@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class lab1_1 {
     public static void main(String[] args) {
+
         System.out.println("1.double to double:");
         System.out.print("a = ");
         Scanner num1_1 = new Scanner(System.in);
