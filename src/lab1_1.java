@@ -37,7 +37,5 @@ public class lab1_1 {
         num1_2.close();
         num2_1.close();
         num2_2.close();
-        num3_1.close();
-        num3_2.close();
     }
 }
