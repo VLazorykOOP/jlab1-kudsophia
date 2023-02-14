@@ -5,16 +5,21 @@ public class lab1_2 {
     public static void main(String[] args) {
         in = new Scanner(System.in);
         int[] myArray = Input();
-        System.out.println("Вихідний масив:");
-        Print(myArray);
+        System.out.println("Вихідний масив: ");
+        int length_1 = myArray.length;
+        Print(myArray, length_1);
 
         Arrays.sort(myArray);
-        int length = myArray.length;
-        length = withoutRepetition(myArray,length);
+        int length_2 = myArray.length;
+        length_2 = withoutRepetition(myArray,length_2);
 
-        System.out.println("Змінений массив:");
-        for (int i=0; i<length; i++)
+        System.out.println("Змінений массив: ");
+        for (int i=0; i<length_2; i++)
             System.out.print(myArray[i]+" ");
+
+        int max = myArray[length_2-1];
+        System.out.print("Максимальне значення = "+max);
+
 }
     static int [] Input(){
         System.out.print("Розмірність масиву= ");
@@ -26,8 +31,8 @@ public class lab1_2 {
         }
         return a;
     }
-    static void Print(int[] a) {
-        for (int i = 0; i < a.length; ++i){
+    static void Print(int[] a, int n) {
+        for (int i = 0; i < n; ++i){
             System.out.print(a[i]+" ");
         }
     }
