@@ -24,7 +24,7 @@ public class lab1_2 {
     static int [] Input(){
         System.out.print("Розмірність масиву= ");
         int n = in.nextInt();
-        int[] a = new int[n];
+        int[] a = new int[400];
         for (int i = 0; i < n; ++i) {
             System.out.print("a[" + i + "]= ");
             a[i] = in.nextInt();
